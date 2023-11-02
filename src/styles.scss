@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+// common code start
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+body{
+    font-family: 'Rajdhani', sans-serif;
+    scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+}
+a{
+    text-decoration: none !important;
+}
+.container{
+    width: 1200px !important;
+    max-width: 100% !important;
+    margin: auto !important;
+}
+ul,li{
+    list-style: none;
+}
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

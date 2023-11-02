@@ -1,0 +1,31 @@
+<!-- <section class="carousel_slide">
+        <div class="slide_item">
+            <div class="slide_item_info">
+                <h6 class="animated">100% genuine Products</h6>
+                <h1 class="animated">Tasty & Healthy <br>  Organic Food</h1>
+                <div class="slide_info_btn animated">
+                    <a href="#" class="btn_one">Shop Now</a>
+                </div>
+            </div>
+            <div class="slide_item_image">
+                <img src="../../assets/img/23_690x.webp" alt="">
+            </div>
+        </div>
+</section> -->
+
+<ngb-carousel>
+    <ng-template *ngFor="let images of image">
+        <div class="slide_item">
+            <div class="slide_item_info">
+                <h6 class="animated">{{image.slideSubTitle}}</h6>
+                <h1 class="animated">{{image.slideTitle}}</h1>
+                <div class="slide_info_btn animated">
+                    <a href="#" class="btn_one">{{image.slideBtn}}</a>
+                </div>
+            </div>
+            <div class="slide_item_image">
+                <img src="../../assets/img/{{image.slideImage}}" alt="">
+            </div>
+        </div>
+    </ng-template>
+</ngb-carousel>
