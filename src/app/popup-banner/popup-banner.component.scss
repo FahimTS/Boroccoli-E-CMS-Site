@@ -1,0 +1,31 @@
+
+.banner {
+    position: relative;
+    img{
+        width: 100%;
+    }
+}
+
+.popup_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    button {
+        width: 80px;
+        height: 80px;
+        background: white;
+        color: #80b500;
+        font-size: 22px;
+        outline: 4px solid #e4ecf2;
+        outline-offset: 15px;
+        transition: 0.3s;
+    }
+}
+
+.popup_banner {
+    position: relative;
+}
+.popup_btn:hover button {
+    outline: 4px solid #80b500 !important;
+}

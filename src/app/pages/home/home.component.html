@@ -1,9 +1,159 @@
+<!-- announcement-bar area start -->
+<div class="announcement_bar">
+        <app-announcement></app-announcement>
+</div>
+<!-- announcement-bar area end -->
 <!-- header area start -->
 <header class="header">
     <div class="container">
         <app-header></app-header>
+        <!-- carousel section start -->
         <app-carousel></app-carousel>
+        <!-- carousel section end -->
     </div>
 </header>
 <!-- header area end -->
-<!-- carousel section start -->
+<!-- banner section start -->
+<section class="banner">
+    <div class="container">
+        <app-banner></app-banner>
+    </div>
+</section>
+<!-- banner section end -->
+
+<!-- our project section start -->
+<section class="our_product">
+<div class="container">
+    <div class="sec_title">
+        <h2>Our Products</h2>
+    </div>
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center" class="remove-border-bottom">
+
+        <mat-tab label="FOOD & DRINKS"> 
+
+            <div class="product_card_inner">
+                <app-product *ngFor="let data of products" [cardData]="data"></app-product>
+            </div>
+        </mat-tab>
+        <mat-tab label="BREAD & CAKE">  
+            <div class="product_card_inner">
+                <app-product-two *ngFor="let data of productsTwo" [cardData]="data"></app-product-two>
+            </div>
+        </mat-tab>
+        <mat-tab label="DRIED FOODS"> 
+            <div class="product_card_inner">
+                <app-product *ngFor="let data of products" [cardData]="data"></app-product>
+            </div>
+        </mat-tab>
+        <mat-tab label="Fish & Meat"> 
+            <div class="product_card_inner">
+                <app-product-two *ngFor="let data of productsTwo" [cardData]="data"></app-product-two>
+            </div>
+        </mat-tab>
+        <mat-tab label="Vegetables"> 
+            <div class="product_card_inner">
+                <app-product *ngFor="let data of products" [cardData]="data"></app-product>
+            </div>
+        </mat-tab>
+
+      </mat-tab-group>
+</div>
+</section>
+<!-- our project section end -->
+<!-- combo package section start -->
+<section class="combo_package">
+    <app-combo-package></app-combo-package>
+</section>
+<!-- combo package section end -->
+<!-- featured product section start -->
+<section class="featured_product">
+    <div class="container">
+        <div class="sec_title">
+            <h2>Featured Product</h2>
+        </div>
+        <swiper-container
+        pagination-clickable="true"
+        >
+            <swiper-slide>
+                <div class="featured_product_inner">
+                    <app-featured-product *ngFor="let data of featuredproducts" [cardData]="data"></app-featured-product>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="featured_product_inner">
+                    <app-featured-product *ngFor="let data of featuredproducts" [cardData]="data"></app-featured-product>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="featured_product_inner">
+                    <app-featured-product *ngFor="let data of featuredproducts" [cardData]="data"></app-featured-product>
+                </div>
+            </swiper-slide>
+          </swiper-container>
+    </div>
+
+</section>
+<!-- featured product section end -->
+<!-- popup banner section start -->
+<section class="popup_banner">
+    <div class="container">
+        <app-popup-banner></app-popup-banner>
+    </div>
+</section>
+<!-- popup banner section end -->
+<!-- testimonal section start -->
+<section class="testimonial">
+        <div class="container">
+        <div class="sec_title">
+            <h4>Testimonails</h4>
+            <h2>Clients Feedbacks</h2>
+        </div>
+
+        <swiper-container speed="500" loop="true">
+            <swiper-slide>
+                <div class="testimonial_inner">
+                    <app-testimonial *ngFor="let data of testimonials" [testiData]="data"></app-testimonial>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="testimonial_inner">
+                    <app-testimonial *ngFor="let data of testimonials" [testiData]="data"></app-testimonial>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="testimonial_inner">
+                    <app-testimonial *ngFor="let data of testimonials" [testiData]="data"></app-testimonial>
+                    </div>
+            </swiper-slide>
+            
+          </swiper-container>
+        </div>
+</section>
+<!-- testimonal section end -->
+<!-- news feed section start -->
+<section class="news_feeds">
+    <div class="container">
+        <div class="sec_title">
+            <h4>// BLOG & INSIGHTS</h4>
+            <h2>News Feed.</h2>
+        </div>
+            
+        <div class="news_feeds_inner">
+            <app-news-feed *ngFor="let data of blogs" [blogData]="data"></app-news-feed>
+        </div>
+
+    </div>
+</section>
+<!-- news feed section end -->
+<!-- feutured box section start -->
+<section class="feutured_box">
+        <div class="feutured_inner">
+            <app-feutured *ngFor="let data of feutureds" [cardData]="data"></app-feutured>
+        </div>
+</section>
+<!-- feutured box section end -->
+<!-- footer area start -->
+<footer class="footer">
+    <app-footer></app-footer>
+</footer>
+<!-- footer area end -->

@@ -1,0 +1,99 @@
+.terms_bg {
+  background: #071c1f url("../../assets/img/terms-of-service.jpg") no-repeat
+    scroll center center / cover;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  margin-bottom: 120px;
+  margin-top: 20px;
+  position: relative;
+}
+.title_area h4 {
+  color: #80b500 !important;
+  font-family: "Rajdhani";
+  font-weight: 700;
+}
+
+.title_area h1 {
+  color: #fff;
+  font-family: "Rajdhani";
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 48px;
+}
+
+.terms_head_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.breadcrumb_area ul {
+  display: flex;
+}
+
+.breadcrumb_area ul li {
+  margin-right: 30px;
+  position: relative;
+  font-weight: 700;
+}
+
+.breadcrumb_area ul li a {
+  color: #fff;
+  font-size: 16px;
+}
+
+.breadcrumb_area ul li span {
+  color: #80b500;
+  font-family: "Rajdhani";
+  font-size: 20px;
+  font-weight: 700;
+}
+.terms_bg:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #071c1f none repeat scroll 0 0;
+  left: 0;
+  opacity: 0.9;
+  top: 0;
+  transition: all 0.3s ease 0s;
+}
+
+.title_area {
+  position: relative;
+}
+.breadcrumb_area ul li a:before {
+    content: "";
+    position: absolute;
+    right: -17px;
+    top: 50%;
+    background: gray;
+    width: 2px;
+    height: 10px;
+    transform: translateY(-50%);
+    opacity: 0.9;
+}
+h1.center {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 1.3;
+}
+
+.terms_body strong {
+    font-family: 'Rajdhani';
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.terms_body p {
+    font-family: 'Rajdhani';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+footer{
+    background-color: #f7f5eb;
+}

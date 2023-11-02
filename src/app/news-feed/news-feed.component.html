@@ -1,0 +1,23 @@
+<div class="news_feed">
+    <div class="news_item">
+        <div class="news_feed_img">
+            <img [src]="blogData.blogImg" alt="">
+        </div>
+        <div class="blog_decs">
+            <div class="blog_meta">
+                <span><i class="fa-solid fa-user"></i></span><a href="#">{{blogData.blogUser}}</a>
+            </div>
+            <h3>
+                <a href="#">{{blogData.blogQues}}</a>
+            </h3>
+            <div class="blog_meta_btn">
+                <div class="blog_meta">
+                    <span><i class="fa-solid fa-calendar-days"></i></span><a href="#">{{blogData.blogDate}}</a>
+                </div>
+                <div class="blog_btn">
+                    <a href="#">{{blogData.blogBtn}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

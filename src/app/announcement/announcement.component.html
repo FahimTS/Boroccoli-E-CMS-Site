@@ -1,0 +1,34 @@
+<div class="announcement_bar" *ngIf="postVisibility === false">
+    <div class="notification_inner">
+        <div class="notification_title">
+            <p>Hooray! Sale up to <strong>50%</strong></p>
+        </div>
+        <div class="notification_date">
+            <div class="single">
+                <h1>{{demo}}</h1>
+                <p>Days</p>
+            </div>
+            <div class="single">
+                <h1>{{demoOne}}</h1>
+                <p>HRS</p>
+            </div>
+            <div class="single">
+                <h1>{{demoTwo}}</h1>
+                <p>MINS</p>
+            </div>
+            <div class="single">
+                <h1>{{demoThree}}</h1>
+                <p>SECS</p>
+            </div>
+        </div>
+        <div class="notification_button">
+            <p>
+                <a href="#">Shop Now</a>
+            </p>
+        </div>
+        <div class="notification_close_btn">
+         <i class="fa-solid fa-xmark" (click)="onToggleBtn()"></i>
+        </div>
+    </div>
+
+</div>

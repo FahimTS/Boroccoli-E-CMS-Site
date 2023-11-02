@@ -1,0 +1,31 @@
+<div class="product">
+    <div class="product_item">
+        <div class="product_item_img">
+            <img [src]="cardData.productImg" alt="">
+        </div>
+        <div class="product_hover_action">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-right-left"></i></a></li>
+            </ul>
+        </div>
+        <div class="product_info">
+            <div class="product_ratting">
+                <ul class="pdc_start">
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+            <h2><a href="#">{{cardData.productTitle}}</a></h2>
+            <div class="price">
+                <span>{{cardData.productRate}}</span>
+            </div>
+        </div>
+</div>
+</div>
+

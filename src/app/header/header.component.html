@@ -21,16 +21,39 @@
 </div>
 <div class="bottom_header">
     <div class="header_logo">
-        <a href="#"><img src="../../assets/img/logo_150x.webp" alt=""></a>
+        <a routerLink="/"><img src="../../assets/img/logo_150x.webp" alt=""></a>
     </div>
     <div class="header_main_menu">
         <ul class="main_menu">
-            <li><a href="#">Home+</a></li>
-            <li><a href="#">Shop+</a></li>
-            <li><a href="#">Product+</a></li>
+            <li class="menu"><a routerLink="/">Home +</a>
+                <ul class="sub_menu_drop">
+                    <li><a href="#">Home Style 1</a></li>
+                    <li><a href="#">Home Style 2</a></li>
+                    <li><a href="#">Home Style 3</a></li>
+                    <li><a href="#">Home Style 4</a></li>
+                    <li><a href="#">Home Style 5</a></li>
+                    <li><a href="#">Home Style 6</a></li>
+                    <li><a href="#">Home Style 7</a></li>
+                    <li><a href="#">Home Style 8</a></li>
+                    <li><a href="#">Home Style 9</a></li>
+                </ul>
+            </li>
+            <li class="shop_menu"><a href="#">Shop</a></li>
+            <li class="menu"><a href="#">Product +</a>
+                <ul class="sub_menu_drop">
+                    <li><a href="#">Product Variants</a></li>
+                    <li><a href="#">Product Countdown</a></li>
+                    <li><a href="#">Product Media</a></li>
+                </ul>
+            </li>
             <li><a href="#">Blogs</a></li>
             <li><a href="#">contact</a></li>
-            <li><a href="#">Pages</a></li>
+            <li class="menu"><a href="#">Pages +</a>
+                <ul class="sub_menu_drop">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Faq</a></li>
+                </ul>
+            </li>
         </ul>
         <div class="header_options">
             <ul>
@@ -39,10 +62,11 @@
                         <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                     </div>
                 </li>
-                <li>
+                <li class="user">
                     <div class="user_icon">
                         <a href="#"><i class="fa-solid fa-user"></i></a>
                     </div>
+
                 </li>
                 <li>
                     <div class="cart_icon"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></div>

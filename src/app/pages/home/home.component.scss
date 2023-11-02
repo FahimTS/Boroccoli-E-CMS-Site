@@ -1,5 +1,109 @@
+
 // header area start
 header.header {
     background: #eb695414;
 }
 // header area end
+// our product area start
+section.our_product {
+    padding: 100px 0px 100px;
+}
+.sec_title {
+    text-align: center;
+    margin-bottom: 45px;
+    h2 {
+        font-size: 47px;
+        font-weight: 600;
+    }
+    h4 {
+        color: #80b500 !important;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 13px;
+    }
+}
+
+.product_nav {
+    text-align: center;
+    margin-bottom: 60px;
+    a {
+        display: inline-block;
+        padding: 15px 40px;
+        margin-right: 5px;
+        color: #071c1f;
+        font-weight: 600;
+        // border-bottom: 2px solid #80b500;
+        position: relative;
+    }
+    a::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -5%;
+        transform: translateY(-50%);
+        height: 16px;
+        width: 2px;
+        background: #8cb2b2;
+        opacity: 0.4;
+    }
+    a:first-child::before {
+        width: 0 !important;
+    }    
+}
+.product_card_inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 18px;
+    margin-top: 50px;
+}
+.product_nav a.active {
+    color: #80b500;
+    border-bottom: 2px solid #80b500;
+}
+// our product area end
+// combo package area start
+section.combo_package {
+    background: #f7f5eb no-repeat scroll center center / cover;
+    padding: 100px 0px 110px;
+}
+// combo package area start
+// featured product area start
+.featured_product_inner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 18px;
+    margin-top: 50px;
+}
+
+// featured product area end
+// testimonial area start
+section.testimonial {
+    background: #f2f6f7 no-repeat scroll center center / cover;
+    padding: 100px 0px 105px;
+}
+.testimonial_inner{
+    display: flex;
+}
+// testimonial area end
+// blog area start
+.news_feeds_inner {
+    display: flex;
+}
+// blog area end
+// feutured area start
+.feutured_inner{
+    display: flex;
+    // padding: 0px 25px;
+    box-shadow: 0 16px 35px 0 rgba(7, 28, 31, 0.1);
+    position: relative;
+    top: 80px;
+}
+section.feutured_box {
+    padding: 55px 25px 0px;
+}
+// feutured area end
+// footer area start
+footer.footer {
+    background: #f7f5eb;
+}
+// footer area end

@@ -1,0 +1,46 @@
+.feutured_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px 55px;
+    // box-shadow: 0 16px 35px 0 rgba(7, 28, 31, 0.1);
+    background: white;
+    position: relative;
+}
+
+
+.feutured_icon {
+    img {
+        width: 30px;
+        margin-right: 25px;
+    }
+}
+
+.feutured_info {
+    h4 {
+        color: #071c1f;
+        margin-bottom: 9px;
+        font-weight: 700;
+        font-family: 'Rajdhani';
+        font-size: 20px;
+    }
+    p {
+        line-height: 24px;
+        font-size: 17px;
+        font-family: 'Rajdhani';
+        font-weight: 500;
+    }
+}
+.feutured_item::before {
+    content: "";
+    position: absolute;
+    width: 1px !important;
+    height: 50%;
+    background: #ddd;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.feutured_item:first-child::before{
+    width: 0px;
+}

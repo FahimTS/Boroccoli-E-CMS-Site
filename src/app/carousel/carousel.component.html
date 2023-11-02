@@ -13,18 +13,24 @@
         </div>
 </section> -->
 
-<ngb-carousel>
-    <ng-template *ngFor="let images of image">
+<ngb-carousel 
+[interval]="5000"
+[showNavigationArrows]="false"
+[animation]="true"
+[pauseOnHover]="false"
+
+>
+    <ng-template ngbSlide *ngFor="let images of slide">
         <div class="slide_item">
             <div class="slide_item_info">
-                <h6 class="animated">{{image.slideSubTitle}}</h6>
-                <h1 class="animated">{{image.slideTitle}}</h1>
+                <h6 class="animated">{{images.slideSubTitle}}</h6>
+                <h1 class="animated">{{images.slideTitle}}</h1>
                 <div class="slide_info_btn animated">
-                    <a href="#" class="btn_one">{{image.slideBtn}}</a>
+                    <a href="#" class="btn_one">{{images.slideBtn}}</a>
                 </div>
             </div>
             <div class="slide_item_image">
-                <img src="../../assets/img/{{image.slideImage}}" alt="">
+                <img src="../../assets/img/{{images.slideImage}}" alt="">
             </div>
         </div>
     </ng-template>

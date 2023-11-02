@@ -1,0 +1,79 @@
+.notification_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification_title {
+    margin-right: 15px;
+}
+.announcement_bar {
+    background: linear-gradient(to right, #80b500 0%, #ffffff 100%);
+    padding: 13px 0px;
+    font-size: 14px;
+    position: relative;
+}
+.notification_button p a:hover {
+    background: #071c1f !important;
+    border: 2px solid #071c1f !important;
+}
+.notification_button p a {
+    background: #e53e29;
+    border: 2px solid #e53e29;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.notification_date {
+    display: flex;
+}
+.notification_close_btn {
+    position: absolute;
+    right: 80px;
+}
+
+.notification_close_btn i {
+    font-size: 25px;
+    color: #e53e29;
+    cursor: pointer;
+}
+.single {
+    width: 45px;
+    // height: 44px;
+    background: #80b500;
+    margin-right: 5px;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.single h1 {
+    font-size: 18px;
+    color: #fff;
+    font-family: "Rajdhani";
+    font-weight: 700;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single p {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: -3px;
+}
+.notification_title p {
+    margin: 0;
+    padding: 0;
+}
+
+.notification_button p {
+    margin: 0;
+}
