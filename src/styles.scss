@@ -1,91 +1,284 @@
 /* You can add global styles to this file, and also import other style files */
 // common code start
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
 }
-body{
-    font-family: 'Rajdhani', sans-serif;
-    scroll-behavior: smooth;
+body {
+  font-family: "Rajdhani", sans-serif;
+  scroll-behavior: smooth;
 }
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 600;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
 }
-a{
-    text-decoration: none !important;
+a {
+  text-decoration: none !important;
 }
-.container{
-    width: 1200px !important;
-    max-width: 100% !important;
-    margin: auto !important;
+.container {
+  width: 1200px !important;
+  max-width: 100% !important;
+  margin: auto !important;
 }
-ul,li{
-    list-style: none;
+ul,
+li {
+  list-style: none;
 }
-section{
-    padding: 100px 0px 0px;
+section {
+  padding: 100px 0px 0px;
 }
 /* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
 
 // span.mdc-tab-indicator__content.mdc-tab-indicator__content--underline {
 //     border: none !important;
 // }
 .mat-mdc-tab-body-content {
-    overflow: hidden !important;
+  overflow: hidden !important;
 }
 .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {
-    color: #80b500 !important;
+  color: #80b500 !important;
 }
-.mdc-tab__text-label{
-    font-weight: 600;
-    font-size: 15px;
-    color: #071c1f !important;
+.mdc-tab__text-label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #071c1f !important;
 }
 span.mdc-tab-indicator__content.mdc-tab-indicator__content--underline {
-    border-color: #80b500 !important;
+  border-color: #80b500 !important;
 }
 span.mdc-tab__content::before {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 16px;
-    background: #8cb2b2;
-    right: -28px;
-    opacity: 0.4;
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  background: #8cb2b2;
+  right: -28px;
+  opacity: 0.4;
 }
-span.mdc-tab__content:last-child::before{
-    opacity: 0 !important;
+span.mdc-tab__content:last-child::before {
+  opacity: 0 !important;
 }
-.swiper-button-next, .swiper-button-prev {
-    position: absolute;
-    top: var(--swiper-navigation-top-offset,50%);
-    width: calc(var(--swiper-navigation-size)/ 44 * 27);
-    height: var(--swiper-navigation-size);
-    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
-    z-index: 10;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--swiper-navigation-color,var(--swiper-theme-color));
-    background: #80b500 !important;
-    color: #fff !important;
-    padding: 14px 17px !important;
-    border-radius: 50% !important;
-    width: 15px !important;
-    height: 20px !important;
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: var(--swiper-navigation-top-offset, 50%);
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+  background: #80b500 !important;
+  color: #fff !important;
+  padding: 14px 17px !important;
+  border-radius: 50% !important;
+  width: 15px !important;
+  height: 20px !important;
 }
-.nav-bar{
-    background-color: #fff;
-    position: sticky;
-    top: 0;
+.nav-bar {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
 }
 .footer_inner {
-    padding: 100px 0px 30px !important;
-    margin-top: 75px;
+  padding: 100px 0px 30px !important;
+  margin-top: 75px;
+}
+
+// ==================== responsive all device ======================
+
+@media screen and (min-width: 992px) and (max-width: 1245px) {
+  .product_item {
+    width: 100% !important;
+  }
+  .combo_info h1 {
+    font-size: 40px !important;
+    line-height: 40px !important;
+  }
+  .single {
+    width: 50px !important;
+    height: 50px !important;
+    margin-right: 10px !important;
+  }
+  .single h1 {
+    font-size: 18px !important;
+  }
+  .comboJar_img img {
+    width: 88% !important;
+  }
+
+  .news_feeds_inner {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .news_item {
+    margin: 0 !important;
+    width: 100% !important;
+    margin-bottom: 50px !important;
+  }
+  .feutured_box {
+    padding: 0px 25px 0px !important;
+  }
+  .product_hover_action ul {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .product_item:hover .product_hover_action {
+    top: 30% !important;
+  }
+}
+// ================ desktop device responsive =================
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .top_header {
+    justify-content: space-around !important;
+  }
+  .bottom_header {
+    justify-content: space-around !important;
+  }
+  .main_menu {
+    display: none !important;
+  }
+  .bars a i {
+    font-size: 22px;
+  }
+  // utilities bar menu
+.utilities_bar {
+  display: block !important;
+  position: fixed;
+  top: 0;
+  left: -645px;
+  background: #fff;
+  height: 100vh;
+  z-index: 11;
+  width: 400px;
+  padding: 50px 40px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.utilities {
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  overflow-y: auto;
+  height: 100%;
+}
+.utilities_head {
+  display: flex;
+  justify-content: space-between;
+}
+.utilities_head button {
+  background: transparent;
+  font-size: 23px;
+  padding: 0 15px;
+}
+.utilities_head {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.utilities_search input {
+  border: 2px solid #e4ecf2;
+  width: 100%;
+  height: 57px;
+  background: #fff;
+  font-size: 17px;
+  padding-left: 20px;
+}
+.utilities_search {
+  margin-bottom: 40px;
+}
+.utilities_menu ul li {
+  /*! padding: 0; */
+  /*! margin: 0; */
+  position: relative;
+  margin-bottom: 20px;
+  padding: 0px 0px 5px;
+}
+.utilities_menu ul {
+  padding: 0;
+}
+.utilities_menu ul li a {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  color: #071c1f;
+}
+
+.utilities_button ul {
+  padding: 0;
+}
+.utilities_button ul li a span {
+  width: 50px;
+  /*! background: red; */
+  padding: 10px;
+  height: 50px;
+  margin-right: 16px;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid #e5eaee;
+  color: #000;
+  font-size: 14px;
+}
+.utilities_button ul li a {
+  font-size: 14px;
+  font-family: "Rajdhani";
+  font-size: 16px;
+  font-weight: 500;
+  color: #6c757d;
+}
+.utilities_button {
+  border-top: 1px solid #ddd;
+  padding: 30px 0px 10px;
+  border-bottom: 1px solid #ddd;
+  margin: 16px 0;
+}
+.utilities_button ul li {
+  margin-bottom: 20px;
+}
+.ut_social_media ul {
+  padding: 0;
+}
+.ut_social_media ul {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.ut_social_media ul li {
+  margin-right: 15px;
+}
+
+.ut_social_media ul li a {
+  width: 40px;
+  height: 40px;
+  background: #f2f6d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+.menuClass{
+  left: 0;
+  transition: all .3s ease;
+}
+.menuIconXbar{
+  display: none !important;
+}
 }

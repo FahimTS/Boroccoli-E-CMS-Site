@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
+  menuIconXbar:boolean = true;
+  menuBars: boolean = false;
+  openMenu(){
+    this.menuBars =! this.menuBars;
+    this.menuIconXbar =! this.menuIconXbar;
+  }
 }

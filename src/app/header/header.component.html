@@ -71,9 +71,69 @@
                 <li>
                     <div class="cart_icon"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></div>
                 </li>
+                <li>
+                    <div class="bars" (click)="openMenu()"><a href="#"><i class="fa-solid fa-bars"></i></a></div>
+                </li>
             </ul>
         </div>
     </div>
+
+    <!-- Utilities Mobile Bar Menu Start -->
+    <div class="utilities_bar" [class.menuClass]="menuBars">
+        <div class="utilities">
+            <div class="utilities_head">
+                <div class="ut_logo">
+                    <a href="#">
+                        <img src="../../assets/img/logo_150x.webp" alt="">
+                        
+                    </a>
+                    
+                </div>
+                <button [class.utilities_bar]="menuIconXbar"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="utilities_search">
+                <form action="">
+                    <input type="search" placeholder="Search our store">
+                </form>
+            </div>
+            <div class="utilities_menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Pages</a></li>
+                </ul>
+            </div>
+            <div class="utilities_button">
+                <ul>
+                    <li><a href="#">
+                        <span><i class="fa-solid fa-user"></i></span>
+                        My Account
+                    </a></li>
+                    <li><a href="#">
+                        <span><i class="fa-regular fa-heart"></i></span>
+                        Wishlist
+                    </a></li>
+                    <li><a href="#">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        Shopping Cart 
+                    </a></li>
+                </ul>
+            </div>
+            <div class="ut_social_media">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-vimeo"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Utilities Mobile Bar Menu End -->
 
 </div>
 <!-- header area end  -->
