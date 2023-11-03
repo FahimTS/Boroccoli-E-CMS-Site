@@ -281,4 +281,125 @@ span.mdc-tab__content:last-child::before {
 .menuIconXbar{
   display: none !important;
 }
+.header_options ul li:nth-child(4) {
+  display: block !important;
+}
+.bars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 14px;
+}
+
+.banner_img_two {
+  width: 100%;
+  height: 100%;
+}
+.banner_inner {
+  /*! width: 885px; */
+  justify-items: center;
+  margin: auto;
+}
+.banner_item_one {
+  width: 395px;
+}
+.banner_item_one img {
+  width: 100%;
+}
+.banner_item_two {
+  width: 395px;
+}
+.banner_item_two img {
+  width: 100%;
+  height: 194px;
+}
+
+.product_card_inner.ng-star-inserted {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+.product_item {
+  width: 100% !important;
+}
+.product_hover_action ul li a {
+  margin-right: 3px !important;
+}
+
+.comboJar_img {
+  display: none;
+}
+.comboT_img {
+  display: none;
+}
+.combo_package_inner {
+  justify-content: center !important;
+}
+.combo_info {
+  margin-left: 0px !important;
+}
+.combo_info h2 {
+  font-size: 20px !important;
+}
+.combo_info h1 {
+  font-size: 32px !important;
+  line-height: 36px !important;
+}
+.single {
+  width: 50px !important;
+  height: 50px !important;
+}
+.single h1 {
+  font-size: 20px !important;
+}
+.featured_product_inner {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+.testimonial_item {
+  width: 485px !important;
+  margin-right: 25px !important;
+  padding: 20px !important;
+}
+.testimonial_img {
+  margin-right: 25px;
+}
+.news_feeds_inner {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+}
+.news_item {
+  width: 95% !important;
+  margin: auto !important;
+  margin-bottom: 25px !important;
+}
+.feutured_inner {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+}
+.feutured_box {
+  padding: 0px 25px 0px !important;
+}
+
+
+.footer_inner {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+.footer_widget_two {
+  width: 288px !important;
+  margin-top: 45px;
+}
+.footer_widget_three {
+  margin-top: 45px;
+}
+.footer_widget_four {
+  width: 297px !important;
+  margin-top: 35px;
+}
+.footer_subs input {
+  width: 300px !important;
+}
+.footer_btn button {
+  right: -2px !important;
+}
 }
