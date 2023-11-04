@@ -1119,4 +1119,19 @@ span.mdc-tab__content:last-child::before {
 section.our_product {
   padding: 615px 0px 100px !important;
 }
+.notification_inner {
+  flex-direction: column;
+}
+
+.notification_title {
+  margin-bottom: 15px;
+}
+
+.notification_date {
+  margin-bottom: 20px;
+}
+
+.notification_close_btn {
+  right: 25px !important;
+}
 }
