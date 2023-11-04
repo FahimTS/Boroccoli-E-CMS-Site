@@ -1067,4 +1067,53 @@ span.mdc-tab__content:last-child::before {
 .banner_item_two img {
   width: 100% !important;
 }
+.product_card_inner {
+  grid-template-columns: repeat(1, 1fr) !important;
+}
+
+.product_hover_action {
+  left: 35px !important;
+}
+
+.featured_product_inner {
+  grid-template-columns: repeat(1, 1fr) !important;
+}
+
+.banner {
+  height: 335px;
+}
+
+.banner img {
+  height: 100%;
+}
+
+.sec_title h2 {
+  font-size: 25px !important;
+  line-height: 15px;
+}
+
+.sec_title h4 {
+  font-size: 13px !important;
+}
+
+.testimonial_inner {
+  width: 100% !important;
+}
+
+.testimonial_item {
+  width: 390px !important;
+  display: block !important;
+}
+
+.testimonial_img {
+  margin-bottom: 25px;
+}
+
+.footer_subs input {
+  width: 94% !important;
+}
+
+.copyright_inner {
+  flex-direction: column !important;
+}
 }
